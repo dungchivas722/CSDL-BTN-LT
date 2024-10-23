@@ -9,18 +9,9 @@ Hệ thống quản lý sinh viên hiện đại với các tính năng như: b�
 
 ### Thành viên nhóm ✨🌟
 
-<table>
-		<tr>
-			Văn Quốc Dũng
-		</tr>
-        <tr>
-            Trịnh Hải Tiến
-        </tr>
-        <tr>
-            Nguyễn Kim Trung Đức
-        </tr>
-</table>
-
+#### Văn Quốc Dũng
+#### Trịnh Hải Tiến
+#### Nguyễn Kim Trung Đức
 ## Phát triển 👨‍💻
 
 Ghi chú : yêu cầu python trên 3.8
