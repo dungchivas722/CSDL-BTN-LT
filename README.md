@@ -195,8 +195,10 @@ Tài khoản mặc định để đăng nhập vào hệ thống
 - Nộp đơn xin nghỉ phép
 - Gửi phản hồi đến Trưởng bộ môn (HOD)
 
-### Hình ảnh mẫu 📸
+### Một số hình ảnh mẫu 📸
 
-![Dang update](https://raw.githubusercontent.com/dungchivas722/CSDL-BTN-LT/refs/heads/main/picture/1.png?token=GHSAT0AAAAAAC2TCFITC2B7DF5UVLQ2LZCAZ3ESDJQ)
-
+![1](https://raw.githubusercontent.com/dungchivas722/CSDL-BTN-LT/main/picture/1.png)
+![2](https://raw.githubusercontent.com/dungchivas722/CSDL-BTN-LT/main/picture/2.png)
+![3](https://raw.githubusercontent.com/dungchivas722/CSDL-BTN-LT/main/picture/3.png)
+![4](https://raw.githubusercontent.com/dungchivas722/CSDL-BTN-LT/main/picture/4.png)
 ```
