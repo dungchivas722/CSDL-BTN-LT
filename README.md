@@ -29,7 +29,7 @@ Công nghệ sử dụng: MySQL, Django, HTML, CSS, JavaScript
 
 ### Cách 1 : Dành cho người dùng phổ thông không cần cài đặt môi trường
  
-Đường dẫn file tải xuống : [Tải xuống tại đây](https://drive.google.com/drive/folders/1LvHGgHU9LLPnoPdavVcL8AWUMm5tjIzh?usp=sharing)!
+Đường dẫn file tải xuống : [duncloud.online](https://duncloud.online/s/wgPRb2nRkKgkGoM)!
 
 Giả nén file và chạy file `run_server.bat` để khởi chạy ứng dụng máy chủ
 
