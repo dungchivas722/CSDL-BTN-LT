@@ -89,7 +89,7 @@ Tài khoản mặc định để đăng nhập vào hệ thống
 
 ### Quan hệ cơ sở dữ liệu 📚
 
-![CSDL](https://raw.githubusercontent.com/dungchivas722/CSDL-BTN-LT/refs/heads/main/picture/bang.png?token=GHSAT0AAAAAAC2TCFITC2B7DF5UVLQ2LZCAZ3ESDJQ)
+![CSDL](https://raw.githubusercontent.com/dungchivas722/CSDL-BTN-LT/main/picture/bang.png)
 
 ## Hành Trình Dự Án 📝
 - **Đăng nhập:**
