@@ -1,6 +1,6 @@
 #  Hệ thống quản lý trường học ‍🎓
 
-Hệ thống quản lý sinh viên hiện đại 👨‍🎓 với các tính năng như Bảng điều khiển tương tác 🤩 Quản lý điểm danh 🏫Cung cấp phản hồi ✍ Tạo kết quả 📜 Đơn xin nghỉ phép 🍂
+Hệ thống quản lý sinh viên hiện đại với các tính năng như: bảng điều khiển tương tác, quản lý điểm danh, cung cấp phản hồi, Tạo kết quả, đơn xin nghỉ phép
 
 
 [![Website shields.io](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](https://aztech.ai.vn:8433/)
