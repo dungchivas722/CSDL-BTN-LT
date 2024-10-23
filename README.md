@@ -45,6 +45,15 @@ Cài Đặt Môi Trường 🚀
 
 `$ source venv/Scripts/activate`
 
+Cài đặt ưu tiên 🛠
+
+`$ pip install -r requirements.txt`
+
+Cuối cùng chay lệnh sau để khởi chạy ứng dụng
+
+`$ python manage.py runserver`
+
+
 ## Cơ sở dữ liệu 📊
 
     'USER': "dun",
@@ -54,17 +63,9 @@ Cài Đặt Môi Trường 🚀
 
 - Cơ sở dữ liệu được sử dụng là MySQL và nó có thể remote trên máy chủ của nhóm
 
----
-
-Cài đặt ưu tiên 🛠
-
-`$ pip install -r requirements.txt`
-
-Cuối cùng chay lệnh sau để khởi chạy ứng dụng
-
-`$ python manage.py runserver`
 
 Tài khoản mặc định để đăng nhập vào hệ thống
+---
 
 **Vai trò quản trị**
 
