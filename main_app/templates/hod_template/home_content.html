@@ -1,0 +1,148 @@
+{% extends 'main_app/base.html' %}
+{% load static %}
+{% block page_title %}{{ page_title }}{% endblock page_title %}
+{% block content %}
+<section class="content">
+    <div class="container-fluid">
+        <!-- Welcome Message -->
+        <div class="row mb-4">
+            <div class="col-12">
+                <div class="alert alert-info text-center shadow-lg">
+                    <h2 class="mb-0">Chào mừng đến với Đại học Công nghệ, Đại học Quốc gia Hà Nội</h2>
+                </div>
+            </div>
+        </div>
+
+        <!-- Small boxes (Stat box) -->
+        <div class="row">
+            <div class="col-lg-3 col-6">
+                <div class="small-box bg-gradient-dark shadow-lg">
+                    <div class="inner">
+                        <h3>{{ total_students }}</h3>
+                        <p>Tổng sinh viên</p>
+                    </div>
+                    <div class="icon">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <a href="{% url 'manage_student' %}" class="small-box-footer">Thêm thông tin <i class="fas fa-arrow-circle-right"></i></a>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-6">
+                <div class="small-box bg-gradient-teal shadow-lg">
+                    <div class="inner">
+                        <h3>{{ total_staff }}</h3>
+                        <p>Tổng giảng viên</p>
+                    </div>
+                    <div class="icon">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <a href="{% url 'manage_staff' %}" class="small-box-footer">Thêm thông tin <i class="fas fa-arrow-circle-right"></i></a>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-6">
+                <div class="small-box bg-gradient-orange shadow-lg">
+                    <div class="inner">
+                        <h3>{{ total_course }}</h3>
+                        <p>Tổng chương trình học</p>
+                    </div>
+                    <div class="icon">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <a href="{% url 'manage_course' %}" class="small-box-footer">Thêm thông tin <i class="fas fa-arrow-circle-right"></i></a>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-6">
+                <div class="small-box bg-gradient-maroon shadow-lg">
+                    <div class="inner">
+                        <h3>{{ total_subject }}</h3>
+                        <p>Tổng môn học</p>
+                    </div>
+                    <div class="icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <a href="{% url 'manage_subject' %}" class="small-box-footer">Thêm thông tin <i class="fas fa-arrow-circle-right"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main row -->
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card card-primary shadow-lg">
+                    <div class="card-header">
+                        <h3 class="card-title">Biểu đồ tỷ lệ sinh viên & giảng viên</h3>
+                    </div>
+                    <div class="card-body">
+                        <canvas id="pieChart" style="min-height: 300px; max-width: 100%;"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card card-success shadow-lg">
+                    <div class="card-header">
+                        <h3 class="card-title">Biểu đồ điểm danh từng môn học</h3>
+                    </div>
+                    <div class="card-body">
+                        <canvas id="barChart" style="min-height: 300px; max-width: 100%;"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock content %}
+
+{% block custom_js %}
+<script>
+    $(document).ready(function(){
+        var donutData = {
+            labels: ['Sinh Viên', 'Giảng Viên'],
+            datasets: [{
+                data: [{{ total_students }}, {{ total_staff }}],
+                backgroundColor: ['#007bff', '#28a745'],
+            }]
+        };
+
+        var pieChartCanvas = $('#pieChart').get(0).getContext('2d');
+        new Chart(pieChartCanvas, {
+            type: 'pie',
+            data: donutData,
+            options: {
+                maintainAspectRatio: false,
+                responsive: true,
+            }
+        });
+
+        var subject_list = {{ subject_list|safe }};
+        var attendance_list = {{ attendance_list }};
+
+        var barChartData = {
+            labels: subject_list,
+            datasets: [{
+                label: 'Số lượng điểm danh',
+                backgroundColor: '#17a2b8',
+                borderColor: '#138496',
+                data: attendance_list
+            }]
+        };
+
+        var barChartCanvas = $('#barChart').get(0).getContext('2d');
+        new Chart(barChartCanvas, {
+            type: 'bar',
+            data: barChartData,
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    x: { stacked: true },
+                    y: { stacked: true }
+                }
+            }
+        });
+    });
+</script>
+{% endblock custom_js %}
