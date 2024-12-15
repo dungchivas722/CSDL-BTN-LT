@@ -70,3 +70,50 @@ urlpatterns = [
          hod_views.edit_subject, name='edit_subject'),
 
 
+    # Staff
+    path("staff/home/", staff_views.staff_home, name='staff_home'),
+    path("staff/apply/leave/", staff_views.staff_apply_leave,
+         name='staff_apply_leave'),
+    path("staff/feedback/", staff_views.staff_feedback, name='staff_feedback'),
+    path("staff/view/profile/", staff_views.staff_view_profile,
+         name='staff_view_profile'),
+    path("staff/attendance/take/", staff_views.staff_take_attendance,
+         name='staff_take_attendance'),
+    path("staff/attendance/update/", staff_views.staff_update_attendance,
+         name='staff_update_attendance'),
+    path("staff/get_students/", staff_views.get_students, name='get_students'),
+    path("staff/attendance/fetch/", staff_views.get_student_attendance,
+         name='get_student_attendance'),
+    path("staff/attendance/save/",
+         staff_views.save_attendance, name='save_attendance'),
+    path("staff/attendance/update/",
+         staff_views.update_attendance, name='update_attendance'),
+    path("staff/fcmtoken/", staff_views.staff_fcmtoken, name='staff_fcmtoken'),
+    path("staff/view/notification/", staff_views.staff_view_notification,
+         name="staff_view_notification"),
+    path("staff/result/add/", staff_views.staff_add_result, name='staff_add_result'),
+    path("staff/result/edit/", EditResultView.as_view(),
+         name='edit_student_result'),
+    path('staff/result/fetch/', staff_views.fetch_student_result,
+         name='fetch_student_result'),
+
+
+
+    # Student
+    path("student/home/", student_views.student_home, name='student_home'),
+    path("student/view/attendance/", student_views.student_view_attendance,
+         name='student_view_attendance'),
+    path("student/apply/leave/", student_views.student_apply_leave,
+         name='student_apply_leave'),
+    path("student/feedback/", student_views.student_feedback,
+         name='student_feedback'),
+    path("student/view/profile/", student_views.student_view_profile,
+         name='student_view_profile'),
+    path("student/fcmtoken/", student_views.student_fcmtoken,
+         name='student_fcmtoken'),
+    path("student/view/notification/", student_views.student_view_notification,
+         name="student_view_notification"),
+    path('student/view/result/', student_views.student_view_result,
+         name='student_view_result'),
+
+]
