@@ -193,4 +193,3 @@ Tài khoản mặc định để đăng nhập vào hệ thống
 ![2](https://raw.githubusercontent.com/dungchivas722/CSDL-BTN-LT/main/picture/2.png)
 ![3](https://raw.githubusercontent.com/dungchivas722/CSDL-BTN-LT/main/picture/3.png)
 ![4](https://raw.githubusercontent.com/dungchivas722/CSDL-BTN-LT/main/picture/4.png)
-```
