@@ -2,16 +2,8 @@
 
 Hệ thống quản lý sinh viên hiện đại với các tính năng như: bảng điều khiển tương tác, quản lý điểm danh, cung cấp phản hồi, Tạo kết quả, đơn xin nghỉ phép
 
+Website hiện tại đã đóng... hãy chạy local
 
-[![Website shields.io](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](https://aztech.ai.vn:8433/)
-
-Đường dẫn website [here](https://aztech.ai.vn:8433/)!
-
-### Thành viên nhóm ✨🌟
-
-#### Văn Quốc Dũng
-#### Trịnh Hải Tiến
-#### Nguyễn Kim Trung Đức
 ## Phát triển 👨‍💻
 
 Ghi chú : yêu cầu python trên 3.8
